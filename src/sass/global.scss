@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'MuseoSans';
+    src: local('Museo Sans Cyrl 500'), local('MuseoSansCyrl-500'),
+        url('../fonts/MuseoSansCyrl-500.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-500.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSans';
+    src: local('Museo Sans Cyrl 300'), local('MuseoSansCyrl-300'),
+        url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Berlingske';
+    src: local('BerlingskeSerif-BoldItalic'),
+        url('../fonts/BerlingskeSerif-BoldItalic.woff2') format('woff2'),
+        url('../fonts/BerlingskeSerif-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Berlingske';
+    src: local('BerlingskeSerif-ExtBdIta'),
+        url('../fonts/BerlingskeSerif-ExtBdIta.woff2') format('woff2'),
+        url('../fonts/BerlingskeSerif-ExtBdIta.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: local('GothamPro-Light'),
+        url('../fonts/GothamPro-Light.woff2') format('woff2'),
+        url('../fonts/GothamPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: local('GothamPro-Medium'),
+        url('../fonts/GothamPro-Medium.woff2') format('woff2'),
+        url('../fonts/GothamPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'MuseoSans', 'Tahoma', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+input[type=text],
+input[type=email] {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
