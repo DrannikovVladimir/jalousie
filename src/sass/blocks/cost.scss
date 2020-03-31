@@ -1,0 +1,105 @@
+.cost__button-wrapper {
+  width: 412px;
+  min-height: 98px;
+  border-radius: 5px;
+
+  background-color: #b02021;
+}
+
+.cost__button {
+  position: relative;
+  top: -6px;
+  width: 412px;
+  min-height: 98px;
+  border: none;
+  border-radius: 5px;
+
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, #f25e26, #e0282c);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -18px;
+
+    width: 84px;
+    height: 77px;
+
+    background-image: url('../img/present.png');
+    background-repeat: no-repeat;
+    background-size: 84px;
+    background-position: center;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: -86px;
+    top: -16px;
+
+    width: 141px;
+    height: 126px;
+
+    background-image: url('../img/note.png');
+    background-repeat: no-repeat;
+    background-size: 171px;
+    background-position: center;
+  }
+}
+
+.cost__button-main {
+  font-family: 'GothamPro', 'Tahoma', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.075em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.cost__button-more {
+  position: relative;
+
+  display: block;
+  width: 254px;
+  height: 27px;
+  margin: 0 auto;
+  margin-top: 5px;
+  border-right: 3px;
+
+  background-color: #ffffff;
+
+  font-family: 'Berlingske', 'Palantino', serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.050em;
+  color: #e0282c;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -7px;
+
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: #E73F29;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -7px;
+
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: #E73F29;
+  }
+}
