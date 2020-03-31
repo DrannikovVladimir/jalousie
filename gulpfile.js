@@ -8,23 +8,23 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 
 //Сборка в разрботку
-gulp.task('sass', () => gulp.src('source/sass/style.scss')
+gulp.task('sass', () => gulp.src('src/sass/style.scss')
   .pipe(plumber())
   .pipe(sass())
   .pipe(postcss([
     autoprefixer()
   ]))
-  .pipe(gulp.dest('source/css'))
+  .pipe(gulp.dest('src/css'))
   .pipe(browserSync.stream()));
 
 gulp.task('server', () => {
   browserSync.init({
-    server: 'source'
+    server: 'src'
   });
 
-  gulp.watch('source/sass/**/*.scss', gulp.series('sass'));
-  gulp.watch('source/**/*.html').on('change', browserSync.reload);
-  gulp.watch('source/js/**/*.js').on('change', browserSync.reload);
+  gulp.watch('src/sass/**/*.scss', gulp.series('sass'));
+  gulp.watch('src/**/*.html').on('change', browserSync.reload);
+  gulp.watch('src/js/**/*.js').on('change', browserSync.reload);
 });
 
 gulp.task('start', gulp.series('sass', 'server'));
