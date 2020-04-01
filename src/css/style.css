@@ -526,6 +526,10 @@ input[type="radio"].visually-hidden {
   .page-header__title-wrapper {
     width: auto; } }
 
+@media (max-width: 400px) {
+  .page-header__wrapper {
+    margin-bottom: -330px; } }
+
 .phone__description {
   position: relative;
   margin: 0;
@@ -793,12 +797,13 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 1179px) {
   .features-list {
+    width: 650px;
+    justify-content: space-between;
     margin-bottom: 80px; } }
 
 @media (max-width: 889px) {
   .features-list {
-    justify-content: space-between;
-    width: auto; }
+    width: 550px; }
   .features-list__item {
     display: flex;
     flex-direction: column;
@@ -811,6 +816,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 549px) {
   .features-list {
+    width: auto;
     flex-direction: column;
     margin-bottom: 40px; }
   .features-list__item {

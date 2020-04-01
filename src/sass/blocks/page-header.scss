@@ -205,3 +205,9 @@
     width: auto;
   }
 }
+
+@media (max-width: 400px) {
+  .page-header__wrapper {
+    margin-bottom: -330px;
+  }
+}

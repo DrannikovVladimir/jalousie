@@ -51,14 +51,15 @@
 
 @media (max-width: 1179px) {
   .features-list {
+    width: 650px;
+    justify-content: space-between;
     margin-bottom: 80px;
   }
 }
 
 @media (max-width: 889px) {
   .features-list {
-    justify-content: space-between;
-    width: auto;
+    width: 550px;
   }
 
   .features-list__item {
@@ -78,6 +79,7 @@
 
 @media (max-width: 549px) {
   .features-list {
+    width: auto;
     flex-direction: column;
     margin-bottom: 40px;
   }
