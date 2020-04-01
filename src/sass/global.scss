@@ -27,9 +27,9 @@
 
 @font-face {
     font-family: 'Berlingske';
-    src: local('BerlingskeSerif-ExtBdIta'),
-        url('../fonts/BerlingskeSerif-ExtBdIta.woff2') format('woff2'),
-        url('../fonts/BerlingskeSerif-ExtBdIta.woff') format('woff');
+    src: local('BerlingskeSerif-BlkItalic'),
+        url('../fonts/BerlingskeSerif-BlkItalic.woff2') format('woff2'),
+        url('../fonts/BerlingskeSerif-BlkItalic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
 }
@@ -61,6 +61,7 @@ html {
 }
 
 body {
+  min-width: 320px;
   margin: 0;
   padding: 0;
 

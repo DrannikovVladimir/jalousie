@@ -8,6 +8,16 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <svg style="display: none">
+    <symbol id="arrow" viewBox="0 0 234.7 192">
+      <path d="M231.1,106.1c0.1-0.1,0.1-0.1,0.2-0.2c0.3-0.3,0.5-0.7,0.8-1c0.1-0.2,0.3-0.4,0.4-0.6c0.1-0.2,0.3-0.4,0.4-0.7
+        c0.2-0.3,0.3-0.6,0.4-0.9c0.1-0.2,0.2-0.3,0.2-0.5c0.2-0.4,0.3-0.7,0.4-1.1c0-0.1,0.1-0.2,0.1-0.3c0.1-0.5,0.3-1,0.4-1.4
+        c0,0,0,0,0-0.1c1.1-5.1-0.4-10.6-4.3-14.6l-80-80c-6.3-6.3-16.4-6.3-22.6,0c-6.3,6.3-6.3,16.4,0,22.6L180.1,80H16
+        C7.2,80,0,87.2,0,96s7.2,16,16,16h164l-52.7,52.7c-6.3,6.3-6.3,16.4,0,22.6c3.1,3.1,7.2,4.7,11.3,4.7c4.1,0,8.2-1.6,11.3-4.7
+        l79.9-79.9C230.3,107,230.7,106.6,231.1,106.1"/>
+    </symbol>
+  </svg>
+
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
@@ -30,48 +40,89 @@
     </div>
   </header>
   <main class="page-main">
-    <section class="features">
-      <div class="features__wrapper">
-        <div class="features__promo">
-          <div class="features__promo-text-wrapper">
-            <p class="features__promo-text">Это бесплатно</p>
+    <div class="columns">
+      <div class="columns__wrapper">
+        <section class="features">
+          <div class="features__wrapper">
+            <div class="features__promo">
+              <div class="features__promo-text-wrapper">
+                <p class="features__promo-text">Это бесплатно</p>
+              </div>
+            </div>
+            <h2 class="features__title">За 1 минуту получите расчет стоимости <span>жалюзи</span> + подарок и скидку до 50%</h2>
+            <p class="features__subtitle">при оставлении заявки <span>через сайт </span></p>
+            <ul class="features__list features-list">
+              <li class="features-list__item">
+                <div class="features-list__image-wrapper">
+                  <img src="img/features1.png" alt="Преимущество1" class="features-list__image">
+                </div>
+                <h3 class="features-list__title">Уже через<br>24 часа</h3>
+                <p class="features-list__text">Мы установим Вам жалюзи или рулонные шторы по вашим параметрам после расчета стоимости</p>
+              </li>
+              <li class="features-list__item">
+                <div class="features-list__image-wrapper">
+                  <img src="img/features2.png" alt="Преимущество2" class="features-list__image">
+                </div>
+                <h3 class="features-list__title">5000+ видов<br>на складе</h3>
+                <p class="features-list__text">Ассортимерт из более чем 5000 видов жалюзи и штор всегда в наличии на собственном складе</p>
+              </li>
+              <li class="features-list__item features-list__item--long">
+                <div class="features-list__image-wrapper">
+                  <img src="img/features3.png" alt="Преимущество3" class="features-list__image">
+                </div>
+                <h3 class="features-list__title">Рассрочка<br>и расширенная гарантия</h3>
+                <p class="features-list__text">Предоставляем внутреннюю рассрочку без %, банков и поручителей на месте. Даем гарантию качества: от 15 лет срок службы</p>
+              </li>
+            </ul>
+            <div class="features__cost cost">
+              <div class="cost__button-wrapper">
+                <button class="cost__button" type="button">
+                  <span class="cost__button-main">Начать расчет</span>
+                  <span class="cost__button-more">+ получить подарок и скидку</span>
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-        <h2 class="features__title">За 1 минуту получите расчет стоимости <span>жалюзи</span> + подарок и скидку до 50%</h2>
-        <p class="features__subtitle">при оставлении заявки <span>через сайт </span></p>
-        <ul class="features__list">
-          <li class="features__item">
-            <div class="features__image-wrapper">
-              <img src="img/features1.png" alt="Преимущество1" class="features__list-image">
+        </section>
+
+        <section class="gallery">
+          <div class="gallery__wrapper">
+            <div class="galler__title-wrapper">
+              <h2 class="gallery__title">Примеры наших работ <span>за декабрь 2019</span></h2>
+              <div class="gallery__button-wrapper">
+                <button class="gallery__button gallery__button--active">Жалюзи</button>
+                <button class="gallery__button">Рольставни</button>
+              </div>
             </div>
-            <h3 class="features__list-title">Уже через<br>24 часа</h3>
-            <p class="features__list-text">Мы установим Вам жалюзи или рулонные шторы по вашим параметрам после расчета стоимости</p>
-          </li>
-          <li class="features__item">
-            <div class="features__image-wrapper">
-              <img src="img/features2.png" alt="Преимущество2" class="features__list-image">
+            <div class="gallery__slider slider">
+              <ul class="slider__list">
+                <li class="slider__item">
+                  <img class="slider__image" src="img/gallery1.png" alt="Жалюзи" width="509" height="441">
+                </li>
+              </ul>
+              <div class="slider__pagination pagination">
+                <button class="pagination__button pagination__button--prev">
+                  <span class="visually-hidden">Назад</span>
+                  <svg class="pagination__icon" width="12" height="10">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
+                </button>
+                <div class="pagination__list">
+                  <span class="pagination__list-current-item">1</span>
+                  <span class="pagination__list-last-item">/ 8</span>
+                </div>
+                <button class="pagination__button pagination__button--next pagination__button--active">
+                  <span class="visually-hidden">Вперёд</span>
+                  <svg class="pagination__icon" width="12" height="10">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
-            <h3 class="features__list-title">5000+ видов<br>на складе</h3>
-            <p class="features__list-text">Ассортимерт из более чем 5000 видов жалюзи и штор всегда в наличии на собственном складе</p>
-          </li>
-          <li class="features__item features__item--long">
-            <div class="features__image-wrapper">
-              <img src="img/features3.png" alt="Преимущество3" class="features__list-image">
-            </div>
-            <h3 class="features__list-title">Рассрочка<br>и расширенная гарантия</h3>
-            <p class="features__list-text">Предоставляем внутреннюю рассрочку без %, банков и поручителей на месте. Даем гарантию качества: от 15 лет срок службы</p>
-          </li>
-        </ul>
-        <div class="features__cost cost">
-          <div class="cost__button-wrapper">
-            <button class="cost__button" type="button">
-              <span class="cost__button-main">Начать расчет</span>
-              <span class="cost__button-more">+ получить подарок и скидку</span>
-            </button>
           </div>
-        </div>
+        </section>
       </div>
-    </section>
+    </div>
   </main>
 </body>
 </html>

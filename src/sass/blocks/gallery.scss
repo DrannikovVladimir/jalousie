@@ -1,0 +1,110 @@
+.galler__title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.gallery__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-family: 'GothamPro', 'Tahoma', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 48px;
+
+  span {
+    font-family: 'Berlingske', 'Palantino', serif;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+  }
+}
+
+.gallery__button-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -28px;
+    left: -45px;
+
+    width: 21px;
+    height: 61px;
+
+    background-image: url('../img/arrow-curved.png');
+    background-repeat: no-repeat;
+    background-size: 21px 61px;
+    background-position: center;
+    opacity: 0.5;
+  }
+}
+
+.gallery__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 183px;
+  height: 64px;
+  border: none;
+  background-color: transparent;
+  background-image: url('../img/border.svg');
+  background-repeat: no-repeat;
+  background-size: 183px 64px;
+  background-position: center;
+
+  font-family: 'Berlingske', 'Palantino', serif;
+  font-size: 18px;
+  line-height: 55px;
+  font-weight: 900;
+  letter-spacing: 0.050em;
+  color: #747474;
+
+  &:first-child {
+    margin-right: 15px;
+  }
+
+  &--active {
+    position: relative;
+
+    box-shadow: 0 0 47px rgba(0, 0, 0, 0.14);
+
+    color: #282828;
+
+    background-color: #ffffff;
+    background-image: url('../img/border-active.svg');
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -7px;
+      transform: translateY(-50%);
+
+      width: 14px;
+      height: 14px;
+      border-radius: 14px;
+
+      background-color: #f1f1f1;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -7px;
+      transform: translateY(-50%);
+
+      width: 14px;
+      height: 14px;
+      border-radius: 14px;
+
+      background-color: #f1f1f1;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.columns {
+  position: relative;
+  padding-top: 200px;
+
+  background-image: url('../img/main-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 210px;
+    right: 0;
+
+    width: 174px;
+    height: 352px;
+
+    background-image: url('../img/jalousie.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 174px;
+  }
+}
+
+.columns__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

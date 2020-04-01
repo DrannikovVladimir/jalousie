@@ -1,8 +1,14 @@
 .page-header__wrapper {
+  position: relative;
+
   display: flex;
   align-items: center;
   width: 1180px;
+  margin: 0 auto;
+  margin-bottom: -168px;
   padding: 50px 20px;
+
+  z-index: 100;
 }
 
 .page-header__logo {
@@ -15,17 +21,18 @@
 }
 
 .page-header__title-wrapper {
-  width: 350px;
-  margin-right: 50px;
+  width: 340px;
+  margin-right: 60px;
 }
 
 .page-header__title {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 
   font-size: 12px;
   line-height: 16px;
   font-weight: 300;
+  letter-spacing: 0.050em;
   color: #989898;
 }
 
@@ -43,6 +50,9 @@
   display: flex;
   align-items: center;
   height: 26px;
+
+  font-size: 12px;
+  line-height: 16px;
   font-weight: 500;
   color: #282828;
 
@@ -66,6 +76,8 @@
 }
 
 .page-header__catalog-link-wrapper {
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -77,6 +89,20 @@
   background-repeat: no-repeat;
   background-size: 68px;
   background-position: left center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 15px;
+
+    width: 40px;
+    height: 50px;
+
+    box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.12);
+
+    z-index: -1;
+  }
 }
 
 .page-header__catalog-link {
