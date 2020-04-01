@@ -54,3 +54,9 @@
 .open {
   color: #00af47;
 }
+
+@media (max-width: 889px) {
+  .phone__link {
+    margin-bottom: 10px;
+  }
+}

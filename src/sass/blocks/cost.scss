@@ -103,3 +103,40 @@
     background-color: #E73F29;
   }
 }
+
+@media (max-width: 669px) {
+  .cost__button {
+
+    &::after {
+      width: 0;
+      height: 0;
+    }
+
+    &::before {
+      width: 0;
+      height: 0;
+
+      background: none;
+    }
+  }
+}
+
+@media (max-width: 549px) {
+  .cost__button {
+    width: 280px;
+  }
+
+  .cost__button-wrapper {
+    width: auto;
+  }
+
+  .cost__button-main {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .cost__button-more {
+    width: 210px;
+    font-size: 12px;
+  }
+}

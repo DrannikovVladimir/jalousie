@@ -11,3 +11,13 @@
 
   list-style: none;
 }
+
+@media (max-width: 549px) {
+  .slider {
+    width: auto;
+  }
+
+  .slider__image {
+    width: 100%;
+  }
+}
