@@ -8,7 +8,7 @@
 
 .cost__button {
   position: relative;
-  top: 0.5084vw; // -6px;
+  top: -0.5084vw; // -6px;
   width: 34.9152vw; // 412px;
   min-height: 8.3050vw; // 98px;
   border: none;
@@ -45,6 +45,14 @@
     background-repeat: no-repeat;
     background-size: 14.4915vw; // 171px;
     background-position: center;
+  }
+
+  &:hover {
+    background-image: linear-gradient(to bottom, #e0282c, #f25e26);
+  }
+
+  &:active {
+    transform: translateY(0.5084vw);
   }
 }
 

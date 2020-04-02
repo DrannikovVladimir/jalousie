@@ -464,6 +464,12 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #d5132a; }
+  .page-header__catalog-link:hover {
+    border-color: #f15d6f;
+    color: #f15d6f; }
+  .page-header__catalog-link:active {
+    border-color: #a60f21;
+    color: #a60f21; }
 
 @media (max-width: 1179px) {
   .page-header__wrapper {
@@ -921,7 +927,7 @@ input[type="radio"].visually-hidden {
 
 .cost__button {
   position: relative;
-  top: 0.5084vw;
+  top: -0.5084vw;
   width: 34.9152vw;
   min-height: 8.3050vw;
   border: none;
@@ -950,6 +956,10 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
     background-size: 14.4915vw;
     background-position: center; }
+  .cost__button:hover {
+    background-image: linear-gradient(to bottom, #e0282c, #f25e26); }
+  .cost__button:active {
+    transform: translateY(0.5084vw); }
 
 .cost__button-main {
   font-family: 'GothamPro', 'Tahoma', sans-serif;
@@ -1060,7 +1070,7 @@ input[type="radio"].visually-hidden {
     width: 210px;
     font-size: 12px; } }
 
-.galler__title-wrapper {
+.gallery__title-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1107,7 +1117,7 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   background-image: url("../img/border.svg");
   background-repeat: no-repeat;
-  background-size: 15.5084vw;
+  background-size: 15.4000vw;
   background-position: center;
   font-family: 'Berlingske', 'Palantino', serif;
   font-size: 1.5254vw;

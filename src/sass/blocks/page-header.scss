@@ -115,6 +115,16 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #d5132a;
+
+  &:hover {
+    border-color: lighten(#d5132a, 20%);
+    color: lighten(#d5132a, 20%);
+  }
+
+  &:active {
+    border-color: darken(#d5132a, 10%);
+    color: darken(#d5132a, 10%);
+  }
 }
 
 @media (max-width: 1179px) {
