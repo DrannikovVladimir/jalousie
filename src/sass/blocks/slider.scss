@@ -1,8 +1,8 @@
 .slider {
   position: relative;
 
-  width: 510px;
-  margin: 0 auto 40px;
+  width: 43.2203vw; // 510px;
+  margin: 0 auto 3.3898vw; // 40px;
 }
 
 .slider__list {
@@ -12,12 +12,19 @@
   list-style: none;
 }
 
+.slider__image {
+  width: 100%;
+}
+
+@media (max-width: 1179px) {
+  .slider {
+    width: 510px;
+    margin-bottom: 40px;
+  }
+}
+
 @media (max-width: 549px) {
   .slider {
     width: auto;
-  }
-
-  .slider__image {
-    width: 100%;
   }
 }

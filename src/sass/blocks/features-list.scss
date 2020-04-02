@@ -1,41 +1,41 @@
 .features-list {
   display: flex;
-  width: 570px;
+  width: 48.3050vw; // 570px;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 5.0847vw; // 60px;
   padding: 0;
 
   list-style: none;
 }
 
 .features-list__item {
-  width: 164px;
-  margin-right: 12px;
+  width: 13.8983vw; // 164px;
+  margin-right: 1.0169vw; // 12px;
 
   &:last-child {
     margin-right: 0;
   }
 
   &--long {
-    width: 220px;
+    width: 18.6440vw; // 220px;
   }
 }
 
 .features-list__image-wrapper {
   display: flex;
   align-items: flex-end;
-  min-height: 70px;
-  margin-bottom: 10px;
+  min-height: 5.9322vw; // 70px;
+  margin-bottom: 0.8474vw; // 10px;
 }
 
 .features-list__title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0.8474vw; // 10px;
 
   font-family: 'Berlingske', 'Palatino', serif;
   font-weight: 900;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 1.1864vw; // 14px;
+  line-height: 1.5254vw; // 18px;
   letter-spacing: 0.025em;
   color: #282828;
 }
@@ -43,8 +43,8 @@
 .features-list__text {
   margin: 0;
 
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 1.0169vw; // 12px;
+  line-height: 1.3559vw; // 16px;
   color: #989898;
   font-weight: 300;
 }
@@ -55,6 +55,32 @@
     justify-content: space-between;
     margin-bottom: 80px;
   }
+
+  .features-list__item {
+    width: 164px;
+    margin-right: 12px;
+
+    &--long {
+      width: 220px;
+    }
+  }
+
+  .features-list__image-wrapper {
+    min-height: 70px;
+    margin-bottom: 10px;
+  }
+
+  .features-list__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .features-list__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 
 @media (max-width: 889px) {
@@ -63,9 +89,6 @@
   }
 
   .features-list__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-right: 0;
     width: 130px;
 
@@ -74,6 +97,13 @@
     &--long {
       width: 190px;
     }
+  }
+
+  .features-list__image-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    vertical-align: middle;
   }
 }
 
@@ -90,6 +120,6 @@
   }
 
   .features-list__text {
-    max-width: 320px;
+    width: 280px;
   }
 }

@@ -1,34 +1,19 @@
 .columns {
   position: relative;
-  padding-top: 200px;
+  padding-top: 16.9491vw; // 200px;
 
   background-image: url('../img/main-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 210px;
-    right: 0;
-
-    width: 174px;
-    height: 352px;
-
-    background-image: url('../img/jalousie.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 174px;
-  }
 }
 
 .columns__wrapper {
   display: flex;
   justify-content: space-between;
-  width: 1180px;
+  width: 100vw;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1.6949vw; // 20px;
 }
 
 @media (max-width: 1380px) {
@@ -40,8 +25,13 @@
 }
 
 @media (max-width: 1179px) {
+  .columns {
+    padding-top: 200px;
+  }
+
   .columns__wrapper {
     width: 890px;
+    padding: 0 20px;
     flex-direction: column;
   }
 }

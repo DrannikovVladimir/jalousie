@@ -3,34 +3,34 @@
 
   display: flex;
   align-items: center;
-  width: 1180px;
+  width: 100vw; // 1180px
   margin: 0 auto;
-  margin-bottom: -168px;
-  padding: 50px 20px;
+  margin-bottom: -14.2372vw; // -168px;
+  padding: 50px 1.6949vw; //20px;
 
   z-index: 100;
 }
 
 .page-header__logo {
-  margin-right: 25px;
+  margin-right: 2.1186vw; // 25px;
 }
 
 .page-header__logo-image {
-  width: 187px;
-  height: 55px;
+  width: 15.8474vw; // 187px;
+  height: 4.6610vw; // 55px;
 }
 
 .page-header__title-wrapper {
-  width: 340px;
-  margin-right: 60px;
+  width: 28.8135vw; // 340px;
+  margin-right: 5.0847vw; // 60px
 }
 
 .page-header__title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0.8474vw; // 5px;
 
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 1.0169vw; // 12px;
+  line-height: 1.3559vw; // 16px
   font-weight: 300;
   letter-spacing: 0.050em;
   color: #989898;
@@ -49,29 +49,29 @@
 .page-header__title-item {
   display: flex;
   align-items: center;
-  height: 26px;
+  height: 2.2033vw; // 26px;
 
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 1.0169vw; // 12px;
+  line-height: 1.3559vw; // 16px;
   font-weight: 500;
   color: #282828;
 
   background-repeat: no-repeat;
 
   &--1 {
-    margin-right: 15px;
-    padding-left: 34px;
+    margin-right: 1.2711vw; // 15px;
+    padding-left: 2.8813vw; // 34px;
 
     background-image: url('../img/clock.png');
     background-position: center left -5px;
-    background-size: 30px;
+    background-size: 2.5123vw; // 30px;
   }
 
   &--2 {
-    padding-left: 39px;
+    padding-left: 3.3050vw; // 39px;
 
     background-image: url('../img/medal.png');
-    background-size: 34px;
+    background-size: 2.8813vw; // 34px;
   }
 }
 
@@ -81,23 +81,23 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 275px;
-  min-height: 68px;
-  margin-right: 60px;
+  width: 23.3050vw; // 275px;
+  min-height: 5.7627vw; // 68px;
+  margin-right: 5.0847vw; // 60px;
 
   background-image: url('../img/catalog.png');
   background-repeat: no-repeat;
-  background-size: 68px;
+  background-size: 5.7627vw; // 68px;
   background-position: left center;
 
   &::before {
     content: '';
     position: absolute;
-    top: 10px;
-    left: 15px;
+    top: 0.8474vw; // 10px;
+    left: 1.2711vw; // 15px;
 
-    width: 40px;
-    height: 50px;
+    width: 3.3898vw; // 40px;
+    height: 4.2372vw; // 50px;
 
     box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.12);
 
@@ -106,10 +106,12 @@
 }
 
 .page-header__catalog-link {
-  display: block;
+  display: flex;
   padding-bottom: 2px;
   border-bottom: 1px dashed #d5132a;
-  font-size: 11px;
+
+  font-size: 0.9322vw; // 11px;
+  line-height: 1.2711vw; // 15px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #d5132a;
@@ -129,8 +131,41 @@
     margin-right: 0;
   }
 
+  .page-header__logo-image {
+    width: 187px;
+    height: 55px;
+  }
+
   .page-header__title-wrapper {
     order: 5;
+    width: 340px;
+    margin-right: 60px;
+  }
+
+  .page-header__title {
+    margin-bottom: 5px;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .page-header__title-item {
+    height: 26px;
+
+    font-size: 12px;
+    line-height: 16px;
+
+    &--1 {
+      margin-right: 15px;
+      padding-left: 34px;
+
+      background-size: 30px;
+    }
+
+    &--2 {
+      padding-left: 39px;
+      background-size: 34px;
+    }
   }
 
   .page-header__catalog-link-wrapper {
@@ -138,6 +173,7 @@
     align-self: flex-end;
     min-height: auto;
     margin-right: 0;
+    width: 275px;
 
     background: none;
 
@@ -146,6 +182,11 @@
       height: 0;
       box-shadow: 0 0 0 0;
     }
+  }
+
+  .page-header__catalog-link {
+    font-size: 11px;
+    line-height: 15px;
   }
 
   .page-header__phone {
@@ -176,15 +217,25 @@
     align-items: center;
   }
 
+  .page-header__title {
+    width: 350px;
+  }
+
   .page-header__catalog-link-wrapper {
+    display: flex;
+    justify-content: center;
     order: 6;
     margin-bottom: 20px;
     align-self: center;
     text-align: center;
+
+    &::before {
+      display: none;
+    }
   }
 
   .page-header__catalog-link {
-    margin: 0 auto;
+    text-align: center;
   }
 
   .page-header__phone {
@@ -203,6 +254,10 @@
 
   .page-header__title-wrapper {
     width: auto;
+  }
+
+  .page-header__title {
+    width: 280px;
   }
 }
 

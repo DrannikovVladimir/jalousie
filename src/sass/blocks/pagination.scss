@@ -1,17 +1,17 @@
 .pagination {
   position: absolute;
-  bottom: -17px;
-  left: 53px;
+  bottom: -1.4406vw; // -17px;
+  left: 4.4915vw; // 53px;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 104px;
-  height: 107px;
+  width: 8.8135vw; // 104px;
+  height: 9.0677vw; // 107px;
 
   background-image: url('../img/pagination-bg.png');
   background-repeat: no-repeat;
-  background-size: 104px;
+  background-size: 8.8135vw; // 104px;
   background-position: center;
 }
 
@@ -21,7 +21,7 @@
 
 .pagination__button {
   border: none;
-  padding: 5px;
+  padding: 0.4237vw; // 5px;
 
   background-color: transparent;
 
@@ -35,14 +35,42 @@
 
 .pagination__list {
   font-family: 'Berlingske', 'Palantino', serif;
-  line-height: 24px;
+  line-height: 2.0338vw; // 24px;
   color: #ffffff;
 
   &-current-item {
-    font-size: 18px;
+    font-size: 1.5254vw; // 18px;
   }
 
   &-last-item {
-    font-size: 14px;
+    font-size: 1.1864vw; // 14px;
+  }
+}
+
+@media (max-width: 1179px) {
+  .pagination {
+    bottom: -17px;
+    left: 53px;
+
+    width: 104px;
+    height: 107px;
+
+    background-size: 104px;
+  }
+
+  .pagination__button {
+    padding: 5px;
+  }
+
+  .pagination__list {
+    line-height: 24px;
+
+    &-current-item {
+      font-size: 18px;
+    }
+
+    &-last-item {
+      font-size: 14px;
+    }
   }
 }
